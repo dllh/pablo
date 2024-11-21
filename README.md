@@ -1,4 +1,4 @@
-= README =
+# README
 Pablo is a handy-dandy drawing machine housed by Knox Makers. It uses the Processing language/editor to send to a pair of stepper motors the code needed to have the motors create a drawing on a vertical(ish) notepad. From the motors depend small cables that hold a pen-holder. The code instructs the motors how to move so that the pen will create a drawing based on an svg file provided to the app.
 
 Historically, Pablo has run on a tiny old Windows laptop. This repo includes an install file to make installing the necessary files onto a linux machine (tested on Ubuntu). It also includes some images that can be fed to Pablo to be drawn. The purpose of creating this repo is to shut down that Windows laptop so that we have all open-source software running at Knox Makers.
