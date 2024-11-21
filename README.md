@@ -1,6 +1,7 @@
 # README
 Pablo is a handy-dandy drawing machine housed by Knox Makers. It uses the Processing language/editor to send to a pair of stepper motors the code needed to have the motors create a drawing on a vertical(ish) notepad. From the motors depend small cables that hold a pen-holder. The code instructs the motors how to move so that the pen will create a drawing based on an svg file provided to the app.
 
+## Background
 Historically, Pablo has run on a tiny old Windows laptop. This repo includes an install file to make installing the necessary files onto a linux machine (tested on Ubuntu). It also includes some images that can be fed to Pablo to be drawn. The purpose of creating this repo is to shut down that Windows laptop so that we have all open-source software running at Knox Makers.
 
 Pablo consists of three things:
@@ -13,7 +14,21 @@ There's an [Instructables article](https://www.instructables.com/Polargraph-Draw
 
 Note that an older version of Processing (2.2.1) is required for this to work.
 
+## Installation
+* Download install.sh to some location on your computer. It doesn't really matter where.
+* Open up a terminal window and switch to the directory you placed install.sh into.
+* Run the command: `./install.sh` in the terminal.
+
 This script will create a directory named "pablo" in your home directory. This includes the processing application file required to run Pablo. It also creates a directory named "sketchbook" in your home directory. This is the default location in which Processing stores its sketchbooks. Finally, it adds a desktop icon that runs Processing and loads the polargraphcontroller sketchbook that works as an interface for sending a drawing to the hardware.
 
+The installer downloads some software. The install should be pretty quick but depends on download speed for those software packages. The installer also puts a launcher on your desktop.
+
+## Running Pablo
+Once you've installed the software, look for the launcher on your desktop and click or double click to load. 
+
+More instructions on the steps to use the software to send an image to the hardware will follow.
+
+## License
 Sources for the images in this repo are unknown, and they should not be considered to be open source. The install script is open source, let's say GPL 3.
+
 
