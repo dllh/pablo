@@ -1,7 +1,7 @@
 = README =
-Pablo is our handy-dandy drawing machine, which uses the Processing language/editor to send to a pair of stepper motors the code needed to have the motors create a drawing on a vertical(ish) notepad. From the motors depend small cables that hold a pen-holder. The code instructs the motors how to move so that the pen will create a drawing based on an svg file provided to the app.
+Pablo is a handy-dandy drawing machine housed by Knox Makers. It uses the Processing language/editor to send to a pair of stepper motors the code needed to have the motors create a drawing on a vertical(ish) notepad. From the motors depend small cables that hold a pen-holder. The code instructs the motors how to move so that the pen will create a drawing based on an svg file provided to the app.
 
-Historically, Pablo has run on a tiny old Windows laptop. These instructions explain how to install it on a linux laptop, so that proprietary software isn't required to run the program.
+Historically, Pablo has run on a tiny old Windows laptop. This repo includes an install file to make installing the necessary files onto a linux machine (tested on Ubuntu). It also includes some images that can be fed to Pablo to be drawn. The purpose of creating this repo is to shut down that Windows laptop so that we have all open-source software running at Knox Makers.
 
 Pablo consists of three things:
 
@@ -11,10 +11,9 @@ Pablo consists of three things:
 
 There's an [Instructables article](https://www.instructables.com/Polargraph-Drawing-Machine/) detailing how to build the drawing machine and set up the software. Simplified instructions for how to set up the software and run Pablo follow. Instructions are based on this [guide](https://github.com/euphy/polargraph/wiki/Running-the-controller-from-source-code).
 
-== Get the Software ==
-The polargraph library works only with version 2.2.1 of Processing, so resist the urge to get the latest and greatest. 
+Note that an older version of Processing (2.2.1) is required for this to work.
 
-1. Download version 2.2.1 of Processing from the [releases](https://processing.org/releases) page. 
-2. Install and run it and observe where the "sketchbooks" directory is (check File -> Preferences -> Sketchbook Location). Or change the location if you'd like.
-3. Download polargraphcontroller from [this page](https://github.com/euphy/polargraphcontroller/releases/tag/2017-11-01-20-30). Use the zip file.
-4. Unzip the file and copy/move files from its
+This script will create a directory named "pablo" in your home directory. This includes the processing application file required to run Pablo. It also creates a directory named "sketchbook" in your home directory. This is the default location in which Processing stores its sketchbooks. Finally, it adds a desktop icon that runs Processing and loads the polargraphcontroller sketchbook that works as an interface for sending a drawing to the hardware.
+
+Sources for the images in this repo are unknown, and they should not be considered to be open source. The install script is open source, let's say GPL 3.
+
