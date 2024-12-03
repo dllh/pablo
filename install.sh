@@ -32,6 +32,7 @@ fi
 cd $PABLO_DIRECTORY
 
 mkdir -p $HOMEDIR/sketchbook/libraries
+cp $BUILD_DIRECTORY/pablo-desktop-icon.png $PABLO_DIRECTORY
 
 
 #############################################################################
@@ -77,7 +78,7 @@ chown -R $USERNAME $HOMEDIR/sketchbook
 
 # Overwrite default properties file with one that works with Pablo.
 echo "mv -f $BUILD_DIRECTORY/pablo.properties.txt $HOMEDIR/sketchbook/polargraphcontroller/default.properties.txt"
-mv -f $BUILD_DIRECTORY/pablo.properties.txt $HOMEDIR/sketchbook/polargraphcontroller/default.properties.txt
+cp -f $BUILD_DIRECTORY/pablo.properties.txt $HOMEDIR/sketchbook/polargraphcontroller/default.properties.txt
 
 #############################################################################
 # Make Desktop Shortcut
@@ -96,7 +97,7 @@ Name=Pablo
 GenericName=Pablo
 Comment=Open-source software prototyping platform
 Exec=$HOMEDIR/pablo/processing-2.2.1/processing $HOMEDIR/sketchbook/polargraphcontroller/polargraphcontroller.pde
-Icon=processing-pde
+Icon=$HOMEDIR/pablo/pablo-desktop-icon.png
 Terminal=false
 Categories=Development;IDE;Programming;
 MimeType=text/x-processing;x-scheme-handler/pde;

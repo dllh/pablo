@@ -1,0 +1,11 @@
+- Documentation
+- Test on shop laptop
+- Add "Tesla" button to simplify steps.
+- Update desktop icon?
+
+
+DONE
+
+- udev setup for port permissions
+- Add dialout group
+- Load pablo.properties automatically (required for sizing to work)
