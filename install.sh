@@ -131,6 +131,9 @@ EOM
 			break
         	fi
 	done
+
+	# User needs to be in the dialout group for serial port permissions to work.
+	usermod -a -G dialout $USERNAME
 fi
 
 udevadm control --reload
