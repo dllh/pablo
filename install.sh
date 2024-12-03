@@ -10,6 +10,7 @@
 USERNAME=`logname`
 HOMEDIR="/home/$USERNAME"
 PABLO_DIRECTORY="$HOMEDIR/pablo"
+BUILD_DIRECTORY=`pwd`
 
 #############################################################################
 # Make a working directory or alert if one already exists.
@@ -74,6 +75,9 @@ mv $PABLO_DIRECTORY/Polargraph\ 2017-11-01/processing-source/Processing\ librari
 mv $PABLO_DIRECTORY/Polargraph\ 2017-11-01/processing-source/polargraphcontroller/ $HOMEDIR/sketchbook
 chown -R $USERNAME $HOMEDIR/sketchbook
 
+# Overwrite default properties file with one that works with Pablo.
+echo "mv -f $BUILD_DIRECTORY/pablo.properties.txt $HOMEDIR/sketchbook/polargraphcontroller/default.properties.txt"
+mv -f $BUILD_DIRECTORY/pablo.properties.txt $HOMEDIR/sketchbook/polargraphcontroller/default.properties.txt
 
 #############################################################################
 # Make Desktop Shortcut
